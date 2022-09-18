@@ -1,0 +1,18 @@
+n=int(input())
+a=0
+b=1
+c=a+b
+while(a<=n):
+    i=a
+    c=a+b
+    a=b
+    b=c
+    s=a
+p=abs(n-i)
+q=abs(s-n)
+if(p<q):
+    print(i)
+elif(p==q):
+    print(i,s)
+else:
+    print(s)
