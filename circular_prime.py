@@ -1,18 +1,22 @@
 n=int(input())
-rev=0
-d=0
 def is_prime(s):
-    for i in range(2,int(s**0.5)+1):
-        if(s%i==0):
+        if(s==1):
             return 0
-    else:
-        return 1
-if(is_prime(n)):
-    while(n!=0):
-        d=n%10
-        n=n//10
+        for i in range(2,int(s**0.5)+1):
+            if(s%i==0):
+                return 0
+        else:
+            return 1
+def is_revs(s):
+    rev=0
+    while(s!=0):
+        d=s%10
+        s=s//10
         rev=rev*10+d
-    if(is_prime(rev)):
+    return rev
+p=is_revs(n)
+if(is_prime(n)):
+    if(is_prime(p)):
         print("circular prime")
     else:
         print("prime but not a circular prime")
