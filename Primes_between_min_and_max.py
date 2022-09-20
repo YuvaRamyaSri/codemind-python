@@ -1,15 +1,15 @@
 n=int(input())
 l=list(map(int,input().split()))
+q=l.index(max(l))
+p=l.index(min(l))
 def is_prime(s):
-    if s==1:
+    if(s==1):
         return 0
     for i in range(2,int(s**0.5)+1):
         if(s%i==0):
             return 0
     else:
         return 1
-p=l.index(min(l))
-q=l.index(max(l))
 c=0
 if(p<q):
     for i in range(p,q+1):
