@@ -1,7 +1,7 @@
 n=input().lower()
 c=[]
 for i in n:
-    if(n.count(i)==1 and i!=" "):
+    if(i not in c and i!=" "):
         c.append(i)
 c.sort()
 print(*c,sep='')
