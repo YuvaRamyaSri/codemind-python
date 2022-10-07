@@ -1,8 +1,7 @@
-s=input()
-s=s.lower()
-k=set(s)
-g=[]
-for i in k:
-    if i!=" ":
-        g.append(i)
-print(len(g))
+n=input().lower()
+c=[]
+for i in n:
+    if(i not in c and i!=" "):
+        c.append(i)
+c.sort()
+print(len(c))
