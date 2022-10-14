@@ -1,12 +1,10 @@
-a=input()
-s=[]
-for i in a:
-    if i in 'aeiou':
-        s.append(i)
-f=0
-for i in 'aeiou':
-    if i not in s:
-        f=1
-        print(i,end=' ')
-if(f==0):
-    print('0')
+s=input()
+v="aeiou"
+b=[]
+for i in v:
+    if i not in s and i not in b:
+        b.append(i)
+if len(b)==0:
+    print(0)
+else:
+    print(*b)
