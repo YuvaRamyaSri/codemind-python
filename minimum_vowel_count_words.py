@@ -1,13 +1,15 @@
-n=list(map(str,input().split()))
-s=[]
+n=input().split()
+v="aeiouAEIOU"
+dup=[]
 for i in n:
     c=0
+    p=[]
     for j in i:
-        if(j in "aeiouAEIOU"):
+        if(j in v and j not in p):
             c+=1
-    s.append(c)
-dup=[]
-for i in s:
-    if(i==min(s)):
-        dup.append(i)
-print(len(dup))
+    dup.append(c)
+r=0
+for i in dup:
+    if(i==min(dup)):
+        r+=1
+print(r)
