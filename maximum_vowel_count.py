@@ -1,12 +1,11 @@
-n=input().lower().replace("","")
-n=n.split()
-p=[]
-for i in n:
-    v="aeiouAEIOU"
+a=input()
+b=list(a.split( ))
+l=0
+for i in b:
     c=0
-    m=0
     for j in i:
-        if(j in v):
+        if j in 'aeiou':
             c+=1
-    p.append(c)
-print(max(p))
+    if l<c:
+        l=c
+print(l)
