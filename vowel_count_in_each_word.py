@@ -1,9 +1,10 @@
-n=input().lower().replace("","")
-n=n.split()
-for i in n:
-    v="aeiouAEIOU"
-    c=0
+l=list(map(str,input().split()))
+d=[]
+for i in l:
+    count=0
     for j in i:
-        if(j in v):
-            c+=1
-    print(c,end=" ")
+        if j in "AEIOUaeiou":
+            count=count+1
+    d.append(count)
+for i in d:
+    print(i,end=" ")
