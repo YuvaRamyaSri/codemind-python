@@ -1,8 +1,5 @@
-n=input()
-n=n.split()
-n=n[::-1]
+n=input().split()
 p=0
 for i in n:
-    p=i[0]
-    break
-print(p)
+    p=i
+print(p[0])
