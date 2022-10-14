@@ -1,8 +1,3 @@
-n=input()
-n=n.lower()
-p=[]
-c=0
-n=n.split()
+n=input().split()
 for i in n:
-    p=len(i)
-    print(p,end=" ")
+    print(len(i),end=" ")
