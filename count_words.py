@@ -1,5 +1,4 @@
-n=input()
-n=n.split()
+n=input().split()
 v="aeiouAEIOU"
 c=0
 for i in n:
